@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Global Computers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.jpg" alt="Logo" class="logo">
+      <h1>Global Computers</h1>
+    </div>
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('services')">Services</a>
+      <a href="#" onclick="showSection('clients')">Our Clients</a>
+      <a href="#" onclick="showSection('quote')">Request a Quote</a>
+      <a href="#" onclick="showSection('contact')">Contact Us</a>
+      <a href="#" onclick="showSection('about')">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HOME -->
+    <section id="home" class="section home-bg">
+
+      <!-- 1st: Image Left -->
+      <div class="service-block">
+        <img src="images/hardware.jpg" alt="Hardware">
+        <div class="text-block">
+          <h2>Hardware</h2>
+          <p><!-- Add your hardware info here --></p>
+        </div>
+      </div>
+
+      <!-- 2nd: Image Right -->
+      <div class="service-block">
+        <div class="text-block">
+          <h2>Networking</h2>
+          <p><!-- Add your networking info here --></p>
+        </div>
+        <img src="images/networking.jpg" alt="Networking">
+      </div>
+
+      <!-- 3rd: Image Left -->
+      <div class="service-block">
+        <img src="images/surveillance.jpg" alt="Surveillance">
+        <div class="text-block">
+          <h2>Surveillance</h2>
+          <p><!-- Add your surveillance info here --></p>
+        </div>
+      </div>
+      
+      <!-- 4rd: Image Left -->
+      <div class="service-block reverse">
+        <img src="images/Services.jpg" alt="Services">
+        <div class="text-block">
+          <h2>Services</h2>
+          <p><!-- Add your services info here --></p>
+        </div>
+      </div>
+
+      <!-- Flashy Buttons -->
+      <div class="home-buttons">
+        <button onclick="showSection('contact')">Contact Us</button>
+        <button onclick="showSection('about')">About Us</button>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services-bg">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Computer Hardware Repair</li>
+        <li>Networking Setup & Troubleshooting</li>
+        <li>Surveillance (CCTV) Installation & Maintenance</li>
+        <li>Custom PC Build & Consulting</li>
+        <li>Software Installation & Virus Removal</li>
+        <li>Data Recovery</li>
+        <li>Delers in Commercial laptops,Desktops,Servers</li>
+        <li>Integrator in Office networks</li>
+      </ul>
+    </section>
+
+    <!-- CLIENTS -->
+    <section id="clients" class="section clients-bg">
+      <h2>Our Clients</h2>
+      <ul>
+        <li>Jindal Saw Limited</li>
+        <li>Revenda Co-Op Urban Bank LTD</li>
+        <li>Swami Sanarth Patasanstha</li>
+        <li>Yashwant Patasanstha</li>
+        <li>Girish Roadways</li>
+        <li>Merlin Engineering & Trading</li>
+      </ul>
+    </section>
+
+    <!-- REQUEST A QUOTE -->
+    <section id="quote" class="section quote-bg">
+      <h2>Request a Quote</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="service">What do you want to repair?</label>
+        <input type="text" id="service" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" required>
+
+        <label>Pickup & Drop service needed?</label>
+        <input type="checkbox" id="pickupYes"> Yes
+        <input type="checkbox" id="pickupNo" checked> No
+
+        <div id="addressField" style="display: none;">
+          <label for="address">Pickup Address:</label>
+          <textarea id="address"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-bg">
+      <h2>Contact Us</h2>
+      <p>Email: admin@glocomp.in</p>
+      <p>globcomp_roha@rediffmail.com</p>
+      <p>Phone: +91 9503577047</p>
+      <p>+91 9371778797</p>
+      <p>+91 9545475192</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-bg">
+  <h2>About Us</h2>
+  <p>
+    <b>Swapnil Joshi</b> is a highly skilled computer technician with over a decade of hands-on 
+    experience in the IT field. Starting his journey in <b>2014</b>, Swapnil quickly built a reputation 
+    for delivering reliable and efficient computer solutions. His passion for technology and 
+    dedication to client satisfaction inspired him to establish his own company, 
+    <b>Global Computers</b>, in <b>2017</b>.
+  </p>
+
+  <p>
+    Under his leadership, <b>Global Computers</b> has grown into a trusted name for both individuals 
+    and businesses, offering end-to-end IT services. The company specializes in:
+  </p>
+
+  <ul>
+    <li><b>Computer hardware repair</b> and maintenance</li>
+    <li><b>Networking setup</b> and troubleshooting</li>
+    <li><b>Surveillance (CCTV)</b> installation and upkeep</li>
+    <li><b>Custom PC builds</b> and consulting</li>
+    <li><b>Software installation</b> and virus removal</li>
+    <li><b>Data recovery solutions</b></li>
+    <li><b>Supplying commercial laptops, desktops, and servers</b></li>
+    <li><b>Office network integration</b></li>
+  </ul>
+
+  <p>
+    Over the years, Swapnil and his team have proudly partnered with respected organizations, 
+    delivering tailored IT support and infrastructure solutions. Some of their valued clients include:
+  </p>
+
+  <ul>
+    <li><b>Jindal Saw Limited</b></li>
+    <li><b>Revenda Co-Op Urban Bank LTD</b></li>
+    <li><b>Swami Samarth Patasanstha</b></li>
+    <li><b>Yashwant Patasanstha</b></li>
+    <li><b>Girish Roadways</b></li>
+    <li><b>Merlin Engineering & Trading </b></li>
+  </ul>
+
+  <p>
+    Through dedication, expertise, and a customer-first approach, 
+    <b>Swapnil Joshi</b> has made <b>Global Computers</b> a go-to destination 
+    for reliable IT services in the region. His vision continues to be building 
+    strong client relationships while keeping pace with the rapidly evolving world of technology.
+  </p>
+</section>
+
+  <footer>
+    <p>&copy; Global Computers Since 2017</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    function showSection(id) {
+      sections.forEach(sec => {
+        sec.style.display = (sec.id === id) ? 'block' : 'none';
+      });
+    }
+
+    showSection('home');
+
+    document.getElementById('pickupYes').addEventListener('change', function () {
+      document.getElementById('pickupNo').checked = !this.checked;
+      document.getElementById('addressField').style.display = this.checked ? 'block' : 'none';
+    });
+
+    document.getElementById('pickupNo').addEventListener('change', function () {
+      document.getElementById('pickupYes').checked = !this.checked;
+      document.getElementById('addressField').style.display = this.checked ? 'none' : 'block';
+    });
+  </script>
+</body>
+</html>

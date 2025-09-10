@@ -1,0 +1,179 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #002147, #014080);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  background: white;
+  color: #002147;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #014080;
+  color: white;
+}
+
+.section {
+  display: none;
+  padding: 40px 5%;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  color: #014080;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Alternating Service Blocks */
+.service-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.service-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-block img {
+  width: 48%;
+  height: 260px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.text-block {
+  width: 48%;
+}
+
+.text-block h2 {
+  margin-top: 0;
+}
+
+.home-buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-buttons button {
+  background: linear-gradient(to right, #ff7300, #ffb347);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.home-buttons button:hover {
+  transform: scale(1.05);
+}
+
+/* Background placeholders */
+.home-bg { background-image: url('images/home-bg.jpg'); }
+.services-bg { background-image: url('images/services-bg.jpg'); }
+.clients-bg { background-image: url('images/clients-bg.jpg'); }
+.quote-bg { background-image: url('images/quote-bg.jpg'); }
+.contact-bg { background-image: url('images/contact-bg.jpg'); }
+.about-bg { background-image: url('images/about-bg.jpg'); }
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 12px;
+}
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #002147;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #014080;
+}
+
+footer {
+  background-color: #002147;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .service-block,
+  .service-block.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-block img,
+  .text-block {
+    width: 100%;
+  }
+
+  .service-block img {
+    height: auto;
+  }
+}
